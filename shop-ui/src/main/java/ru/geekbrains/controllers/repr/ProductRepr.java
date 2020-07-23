@@ -22,6 +22,8 @@ public class ProductRepr implements Serializable {
 
     private List<Long> pictureIds;
 
+    private Integer countInStock;
+
     public ProductRepr() {
     }
 
@@ -82,5 +84,13 @@ public class ProductRepr implements Serializable {
 
     public void setPictureIds(List<Long> pictureIds) {
         this.pictureIds = pictureIds;
+    }
+
+    public Integer getCountInStock() {
+        return countInStock;
+    }
+
+    public void setCountInStock(Integer countInStock) {
+        this.countInStock = countInStock;
     }
 }
